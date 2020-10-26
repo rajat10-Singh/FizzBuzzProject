@@ -14,5 +14,6 @@ public class FizzBuzzTests {
         int number = 1;
         String num = fizzbuzz.check(number);
         Assert.assertEquals("1", num);
+        Assert.assertEquals("2", num);
     }
 }

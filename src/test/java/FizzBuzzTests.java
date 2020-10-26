@@ -46,5 +46,6 @@ public class FizzBuzzTests {
     @Test
     public void testNumberHavingBy3And5Both(){
         Assert.assertEquals("FizzBuzz", fizzbuzz.check(53));
+        Assert.assertEquals("FizzBuzz", fizzbuzz.check(35));
     }
 }

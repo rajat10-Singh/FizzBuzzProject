@@ -33,4 +33,9 @@ public class FizzBuzzTests {
         Assert.assertEquals("Buzz", fizzbuzz.check(5));
         Assert.assertEquals("Buzz", fizzbuzz.check(10));
     }
+
+    @Test
+    public void testFizzBuzzMultiplesOfBoth3And5(){
+        Assert.assertEquals("FizzBuzz", fizzbuzz.check(15));
+    }
 }

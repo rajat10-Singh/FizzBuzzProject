@@ -48,4 +48,9 @@ public class FizzBuzzTests {
         Assert.assertEquals("FizzBuzz", fizzbuzz.check(53));
         Assert.assertEquals("FizzBuzz", fizzbuzz.check(35));
     }
+
+    @Test
+    public void testNumberDivisibleBy3AndHaving5(){
+        Assert.assertEquals("FizzBuzz", fizzbuzz.check(54));
+    }
 }

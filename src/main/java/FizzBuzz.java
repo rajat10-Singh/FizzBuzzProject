@@ -4,6 +4,8 @@ public class FizzBuzz {
             return "FizzBuzz";
         else if (having3(number) != null && having5(number) != null)
             return ("FizzBuzz");
+        else if((number % 3 == 0  &&  having5(number) != null) )
+            return ("FizzBuzz");
         else if (number % 3 == 0)
             return "Fizz";
         else if (number % 5 == 0)

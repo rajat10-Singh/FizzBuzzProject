@@ -1,4 +1,5 @@
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 public class FizzBuzzTests {
@@ -8,10 +9,22 @@ public class FizzBuzzTests {
     // and for the multiples of five print “Buzz”.
     // For numbers which are multiples of both three and five print “FizzBuzz”
 
+    private FizzBuzz fizzbuzz;
+
+    @Before
+    public void object(){
+        fizzbuzz = new FizzBuzz();
+    }
+
     @Test
     public void testNumbers(){
-        FizzBuzz fizzbuzz = new FizzBuzz();
         Assert.assertEquals("1", fizzbuzz.check(1));
         Assert.assertEquals("2", fizzbuzz.check(2));
+    }
+
+    @Test
+    public void testFizzMultiplesOf3(){
+        Assert.assertEquals("Fizz", fizzbuzz.check(3));
+
     }
 }

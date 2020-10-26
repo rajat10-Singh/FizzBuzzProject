@@ -60,7 +60,12 @@ public class FizzBuzzTests {
     }
 
     @Test
-    public void testNumberDivisibleBy53AndHaving3(){
+    public void testNumberDivisibleBy3AndHaving3(){
         Assert.assertEquals("Fizz", fizzbuzz.check(36));
+    }
+
+    @Test
+    public void testNumberDivisibleBy5AndHaving5(){
+        Assert.assertEquals("Buzz", fizzbuzz.check(25));
     }
 }

@@ -8,6 +8,8 @@ public class FizzBuzz {
             return ("FizzBuzz");
         else if(number % 3 == 0 ||  having3(number) != null)
             return ("Fizz");
+        else if(number % 5 == 0 ||  having5(number) != null)
+            return ("Buzz");
         else
             return String.valueOf(number);
     }

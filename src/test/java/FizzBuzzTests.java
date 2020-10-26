@@ -23,8 +23,14 @@ public class FizzBuzzTests {
     }
 
     @Test
-    public void testFizzMultiplesOf3(){
+    public void testFizzAndMultiplesOf3(){
         Assert.assertEquals("Fizz", fizzbuzz.check(3));
+        Assert.assertEquals("Fizz", fizzbuzz.check(6));
+    }
 
+    @Test
+    public void testFizzAndMultiplesOf5(){
+        Assert.assertEquals("Buzz", fizzbuzz.check(5));
+        Assert.assertEquals("Buzz", fizzbuzz.check(10));
     }
 }

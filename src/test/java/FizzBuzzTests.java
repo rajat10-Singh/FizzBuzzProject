@@ -11,9 +11,7 @@ public class FizzBuzzTests {
     @Test
     public void testNumbers(){
         FizzBuzz fizzbuzz = new FizzBuzz();
-        int number = 1;
-        String num = fizzbuzz.check(number);
-        Assert.assertEquals("1", num);
-        Assert.assertEquals("2", num);
+        Assert.assertEquals("1", fizzbuzz.check(1));
+        Assert.assertEquals("2", fizzbuzz.check(2));
     }
 }
